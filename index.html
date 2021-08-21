@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMac with Apple M1 chip</title>
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Header content -->
+    <header class="bg-secondary">
+        <div class="container p-5">
+            <h2 class="text-center text-white">My Shopping Cart</h2>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <section class="my-5">
+            <div class="container">
+              <div class="row gx-5">
+                <div class="col-md-4 offset-md-2">
+                    <img class="img-fluid" src="img/mac.png" alt="MAC">
+                </div>
+                <div class="col-md-6">
+                    <!-- Product Description -->
+                    <div>
+                        <h2>Customize your Blue 24‑inch iMac with Apple M1 chip.</h2>
+                        <p class="py-2">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 16GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard - US English</p>
+                    </div>
+                    <!-- Memory -->
+                    <div class="py-3">
+                        <h4>Memory</h4>
+                        <div class="py-2">
+                            <button id="memory-8gb" class="btn btn-secondary">8GB unified Memory</button>
+                            <button id="memory-16gb" class="btn btn-secondary">16GB unified Memory</button>
+                        </div>
+                    </div>
+                    <!-- Storage -->
+                    <div>
+                        <h4>Stroage</h4>
+                        <div class="py-2">
+                            <button id="storage-256gb" class="btn btn-secondary">256GB SSD Storage</button>
+                            <button id="storage-512gb" class="btn btn-secondary">512GB SSD Storage</button>
+                            <button id="storage-1Tb" class="btn btn-secondary">1TB SSD Storage</button>
+                        </div>
+                    </div>
+                    <!-- delivery -->
+                    <div class="py-3">
+                        <h4>Choose your delivery option</h4>
+                        <div class="py-2">
+                            <button id="delivery-free" class="btn btn-secondary">Friday, August 25 FREE Prime Delivery</button>
+                            <button id="delivery-quick" class="btn btn-secondary">Friday, August 21 Delivery Charge $20</button>
+                        </div>
+                    </div>
+                    <!-- price field -->
+                    <div class="row">
+                        <div class="col-8">
+                            <table class="table table-hover py-5">
+                                <tbody>
+                                    <tr class="fw-bold">
+                                        <td>Best Price</td>
+                                        <td>$<span>1299</span></td>
+                                    </tr>
+                                    <tr class="fw-bold">
+                                        <td>Extra Memory Cost</td>
+                                        <td>$<span id="memory-cost">0</span></td>
+                                    </tr>
+                                    <tr class="fw-bold">
+                                        <td>Extra Storage Cost</td>
+                                        <td>$<span id="storage-cost">0</span></td>
+                                    </tr>
+                                    <tr class="border-bottom border-dark fw-bold ">
+                                        <td>Delivery Charge</td>
+                                        <td>$<span id="delivery-charge">0</span></td>
+                                    </tr>
+                                    <tr class="fw-bold">
+                                        <td>Total Price</td>
+                                        <td>$<span id="total-price">1299</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="py-5">
+                                <h3>Add Promo Code</h3>
+                                <div class="input-group">
+                                    <input id="promo-text" type="text" class="form-control">
+                                    <button class="btn btn-outline-danger fw-bold" type="button" id="promo-code-button">Apply</button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <hr class="border py-1 border-dark rounded-pill">
+              <!-- Total Price Count -->
+              <div class="text-center">
+                <h2 class="d-inline">Total: </h2>
+                <h2 class="d-inline">$<span id="final-total">1299</span></h2>
+              </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- own js -->
+    <script src="js/apps.js"></script>
+</body>
+</html>
