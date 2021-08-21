@@ -82,17 +82,6 @@ document.getElementById('promo-code-button').addEventListener('click', function(
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
 // Memory Button
 
 document.getElementById('memory-8gb').addEventListener('click', function(){
